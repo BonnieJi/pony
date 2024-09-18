@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordish Game</title>
+    <link rel="stylesheet" href="{% static 'wordish/css/words.css' %}">
+</head>   
+
+<body>
+    <img src="50125.gif" alt="My Little Pony Animation"
+         style="position: absolute; left: 8px; bottom: 10px; width: 200px; height: 150px;">
+    <img src="giphy.gif" alt="My Little Pony Animation" 
+         style="position: absolute; right: 8px; top: 10px; width: 200px; height: 150px;">
+    <img src="50250.gif" alt="My Little Pony Animation"
+         style="position: absolute; right: 8px; bottom: 10px">
+    <img src="1.gif" alt="My Little Pony Animation"
+         style="position: absolute; left: 16px; top: 5px;">
+    <img id="flyingGif" src="2.gif" alt="My Little Pony Animation" style="position: absolute; width: 150px; height: 100px;">
+
+    <style>
+        @keyframes flyAllOver {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(60vw, 21vh); }
+            50% { transform: translate(0vw, 50vh); }
+            75% { transform: translate(-30vw, 10vh); }
+            88% { transform: translate(-40vw, -30vh); }
+            95% { transform: translate(30, 30); }
+            100% { transform: translate(45, 62); }
+        }
+
+        /* Apply animation to make it fly */
+        #flyingGif {
+            animation: flyAllOver 10s linear infinite;
+        }
+    </style>
+</body>
